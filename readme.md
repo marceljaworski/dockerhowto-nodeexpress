@@ -8,6 +8,8 @@
 
 `docker run dockerid`
 
+`docker run -p 5001:8080 dockerid`
+
 ### docker volume  
 shared-files to multiple containers at the same time
 
