@@ -14,14 +14,24 @@
 
 `docker run containerid`
 
+`docker run -d dockername` run detached mode, the terminal is free to use
+
+`docker run -p5002:5001 containerid` binding local- machine-port -p5001:8080 container- port
+
 `docker stop containerid`
 `docker start containerid`
 
+`docker logs containername`
+
 `docker build -t dockerusername/nodeexpress:1.0 .`
 
+`docker run -d -p5003:5001 --name new-nodeserver marceljaworski/nodeexpress` create new named container from imagename
 
-`docker run -p5001:8080 containerid` binding local- machine-port -p5001:8080 container- port
-
+***exec***
+`docker exec -it containername /bin/bash` get acces into container. -it Interactive Terminal
+`cd /` got to home directory
+`env` see environmental variables
+`exit` go out
 ### docker volume  
 shared-files to multiple containers at the same time
 
