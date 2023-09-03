@@ -5,6 +5,10 @@
 
 `docker ps -a` list running and stopped container
 
+`docker rm conatinername` remove a container 
+
+`docker rmi nginx` remove a image !Delete all dependent containers  to remove image
+
 `docker images` show all the images in local machine 
 
 `docker pull imagename` pull the image to local machine
