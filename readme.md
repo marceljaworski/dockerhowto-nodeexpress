@@ -1,5 +1,6 @@
 # Docker node express server
 
+`docker build -t expressjs .`  command reads all the configuration we added to our Dockerfile and creates a docker image from it
 ## Docker commands
 
 `docker ps` show the running containers
@@ -7,6 +8,8 @@
 `docker ps -a` list running and stopped container
 
 `docker rm conatinername` remove a container
+
+`docker run --rm -P expressjs` wenn stoped delete the container
 
 `docker rmi nginx` remove a image !Delete all dependent containers  to remove image
 
