@@ -1,19 +1,20 @@
 # Docker node express server
+
 ## Docker commands
 
 `docker ps` show the running containers
 
 `docker ps -a` list running and stopped container
 
-`docker rm conatinername` remove a container 
+`docker rm conatinername` remove a container
 
 `docker rmi nginx` remove a image !Delete all dependent containers  to remove image
 
-`docker images` show all the images in local machine 
+`docker images` show all the images in local machine
 
 `docker pull imagename` pull the image to local machine
- 
-***run*** 
+
+***run***
 `docker run node` pull the image and start the application container in local machine (pull + start two commands in one)
 
 `docker run imagename` docker run works just with images to create a new container
@@ -36,7 +37,9 @@
 `cd /` got to home directory
 `env` see environmental variables
 `exit` go out
+
 ### docker volume  
+
 shared-files to multiple containers at the same time
 
 `docker volume create shared-files`
