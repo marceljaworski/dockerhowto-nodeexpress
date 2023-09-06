@@ -1,6 +1,7 @@
 # Docker node express server
 
 `docker build -t expressjs .`  command reads all the configuration we added to our Dockerfile and creates a docker image from it
+
 ## Docker commands
 
 `docker ps` show the running containers
@@ -31,9 +32,12 @@
 
 `docker logs containername`
 
+***build**
 `docker build -t dockerusername/nodeexpress:1.0 .`
 
-`docker run -d -p5003:5001 --name new-nodeserver marceljaworski/nodeexpress` create new named container from imagename
+`docker image tag nodeexpress:latest nodeexpress:v1.0` command to create a new tag for our image
+
+`docker run -d -p 5003:5001 --name new-nodeserver marceljaworski/nodeexpress` create new named container from imagename
 
 ***exec***
 `docker exec -it containername /bin/bash` get acces into container. -it Interactive Terminal
