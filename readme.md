@@ -19,6 +19,7 @@
 `docker pull imagename` pull the image to local machine
 
 ***run***
+
 `docker run node` pull the image and start the application container in local machine (pull + start two commands in one)
 
 `docker run imagename` docker run works just with images to create a new container
@@ -33,6 +34,7 @@
 `docker logs containername`
 
 ***build**
+
 `docker build -t dockerusername/nodeexpress:1.0 .`
 
 `docker image tag nodeexpress:latest nodeexpress:v1.0` command to create a new tag for our image
@@ -40,6 +42,7 @@
 `docker run -d -p 5003:5001 --name new-nodeserver marceljaworski/nodeexpress` create new named container from imagename
 
 ***exec***
+
 `docker exec -it containername /bin/bash` get acces into container. -it Interactive Terminal
 `cd /` got to home directory
 `env` see environmental variables
