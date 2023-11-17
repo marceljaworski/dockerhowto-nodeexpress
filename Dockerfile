@@ -1,5 +1,5 @@
 # Start your image with a node base image
-FROM node 
+FROM node:21-alpine3.18
 
 # The /app directory should act as the main application directory
 WORKDIR /usr/src/app
